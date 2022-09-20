@@ -1,0 +1,49 @@
+/* index.html */
+.socialmedia{
+    margin-top: 50px;
+}
+.socialmedia a{
+    margin: 10px;
+}
+
+/* academics.html
+    No styles applied otherthan bootstarp
+*/
+
+/* hobbies.html */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* achievements.html */
+.flex-container-ach {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-ach div {
+    margin: 5px;
+    height: 225px;
+    text-align: justify;
+}
+.flex-container-ach div:hover {
+    background-color: gainsboro;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 15px;      
+}
+.card-text {
+    height: 85px;
+}
+.card-link {
+    position: relative;
+    bottom: 4px;
+}
+.card a {
+    align-self: center;
+}

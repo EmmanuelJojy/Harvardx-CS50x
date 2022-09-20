@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Achievements</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function dynamic()
+            {
+                let banner = document.querySelector("#alert");
+                if(banner.innerHTML === 'Achievements')
+                {
+                    banner.innerHTML = "This is Emmanuel Jojy's official HomePage/Achievements developed for CS50x pset (web track).";
+                }
+                else
+                {
+                    banner.innerHTML = "Achievements";
+                }
+                
+            }
+            window.setInterval(dynamic, 4000);
+        </script>
+    </head>
+    <body>
+        <p></p>
+        <div class="alert alert-secondary blink" role="alert" style="text-align: center;" id="alert">
+            This is Emmanuel Jojy's official HomePage/Achievements developed for CS50x pset (web track).
+        </div>
+        <p></p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="padding-bottom: 8px; " href="index.html">Emmanuel Jojy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!--a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a-->
+                    <a class="nav-link" href="academics.html">Academics</a>
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                    <a class="nav-link" href="achievements.html">Achievements</a>
+                </div>
+            </div>
+        </nav>
+        <h4 style="margin: 5px; text-align: center;">Some of my achievements<br></h4>
+        <div class="flex-container-ach">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MITx 6.00.1x</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">edx course</h6>
+                    <p class="card-text">An Introduction to Computer Science and Programming Using Python. An online course by MIT.</p>
+                    <a href="https://courses.edx.org/certificates/ebbe6d79fcaf44fe9171b7666050d3c0" class="card-link" target="_blank">Certificate</a>
+                    <a href="https://www.edx.org/course/introduction-to-computer-science-and-programming-7" class="card-link" target="_blank">Course link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="CS50x">CS50x</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">edx course</h6>
+                    <p class="card-text">CS50's Introduction to Computer Science. An online course by Harvard University.</p>
+                    <a href="#" class="card-link">Certificate</a>
+                    <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" class="card-link" target="_blank">Course link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CS50w</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">edx course</h6>
+                    <p class="card-text">CS50's Web Programming with Python and JavaScript. An online course by Harvard University</p>
+                    <a href="#" class="card-link">Certificate</a>
+                    <a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" class="card-link" target="_blank">Course Link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Introduction to Python</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">NPTEL course</h6>
+                    <p class="card-text">Programming, Data Structures And Algorithms Using Python, by Prof. Madhavan Mukund.</p>
+                    <a href="https://nptel.ac.in/content/noc/NOC20/SEM1/Ecertificates/106/noc20-cs26/Assignment/Certificates/NPTEL20CS26S1PC881832.jpg" class="card-link">Certificate</a>
+                    <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/preview" class="card-link" target="_blank">Course Link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Python (Basic)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">HackerRank Certification</h6>
+                    <p class="card-text">Evaluvates topics like Control Flow, Collections and Iteration, Modularity, Objects Classes.</p>
+                    <a href="https://www.hackerrank.com/certificates/cf75248364f9" class="card-link" target="_blank">Certificate</a>
+                    <a href="https://www.hackerrank.com/" class="card-link" target="_blank">HackerRank</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">QuaRunTime Rank 3</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Quiz by IEEE, AJCE</h6>
+                    <p class="card-text">Evaluvates topics like Control Flow, Collections and Iteration, Modularity, Objects Classes.</p>
+                    <a href="assets/QuaRunTime.jpg" class="card-link" target="_blank">Certificate</a>                    
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Google India Challenge</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Google + Udacity</h6>
+                    <p class="card-text">Google India Challenge Scholarship Recepient 2018. #GoogleUdacityScholars</p>
+                    <a href="assets/gics.png" class="card-link" target="_blank">Badge</a>                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

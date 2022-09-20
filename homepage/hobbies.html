@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hobbies</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            let c_book = 0, c_film = 0, c_code = 0, c_phy = 0;
+            function add_book()
+            {
+                c_book++;
+                document.querySelector("#book").innerHTML= "Love Reading (" + c_book.toString() + ")";    
+            }    
+            function add_film()
+            {
+                c_film++;
+                document.querySelector("#film").innerHTML= "Love Movies (" + c_film.toString() + ")";    
+            }  
+            function add_code()
+            {
+                c_code++;
+                document.querySelector("#code").innerHTML= "Love Coding (" + c_code.toString() + ")";    
+            }      
+            function add_phy()
+            {
+                c_phy++;
+                document.querySelector("#phy").innerHTML= "Love Physics (" + c_phy.toString() + ")";    
+            }    
+            function dynamic()
+            {
+                let banner = document.querySelector("#alert");
+                if(banner.innerHTML === 'Hobbies')
+                {
+                    banner.innerHTML = "This is Emmanuel Jojy's official HomePage/Hobbies developed for CS50x pset (web track).";
+                }
+                else
+                {
+                    banner.innerHTML = "Hobbies";
+                }
+                
+            }
+            window.setInterval(dynamic, 4000);      
+        </script>
+    </head>
+    <body>
+        <p></p>
+        <div class="alert alert-secondary blink" role="alert" style="text-align: center;" id="alert">
+            This is Emmanuel Jojy's official HomePage/Hobbies developed for CS50x pset (web track).
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="padding-bottom: 8px; " href="index.html">Emmanuel Jojy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!--a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a-->
+                    <a class="nav-link" href="academics.html">Academics</a>
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                    <a class="nav-link" href="achievements.html">Achievements</a>
+                </div>
+            </div>
+        </nav>
+        <h4 style="margin-top: 5px; text-align: center;">Some of my all time favourites<br></h4>
+        <p style="margin: 100px;"></p>
+        <div class="flex-container">
+            <div>
+                <div class="card" style="width: 18rem; margin-right: 25px;">
+                    <img src="assets/book_1.jpg" class="card-img-top" alt="books">
+                    <div class="card-body">
+                        <h5 class="card-title">Reading</h5>
+                        <p class="card-text" style="text-align: justify;" >Intersted to read genres like fiction, motivational and comics. Some of my favourites are Pudd'nhead Wilson, Alchemist.</p>
+                        <button onclick="add_book(); return false" class="btn btn-primary" id="book">Love Reading (0)</button> 
+                        <form>
+                            <div class="form-row align-items-center" style="margin-top: 8px;">
+                                <div class="col-lg-9 my-1">
+                                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                                    <input type="text" class="form-control" placeholder="Suggest a book">
+                                </div>                        
+                                <div class="col-auto my-1">
+                                    <button type="submit" class="btn btn-primary">📖</button>
+                                </div>
+                            </div>
+                        </form>  
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card" style="width: 18rem; margin-right: 25px;">
+                    <img src="assets/film_1.jpg" class="card-img-top" alt="film">
+                    <div class="card-body">
+                        <h5 class="card-title">Movies</h5>
+                        <p class="card-text" style="text-align: justify;" >No specific interest to specific genres, but a small slant to sci-fi movies. Interstellar and Ant Man are some of my favourites.</p>
+                        <button onclick="add_film(); return false" class="btn btn-primary" id="film">Love Movies (0)</button>                        
+                        <form>
+                            <div class="form-row align-items-center" style="margin-top: 8px;">
+                                <div class="col-lg-9 my-1">
+                                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                                    <input type="text" class="form-control" placeholder="Suggest a movie">
+                                </div>                        
+                                <div class="col-auto my-1">
+                                    <button type="submit" class="btn btn-primary">☆☆</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card" style="width: 18rem; margin-right: 25px;">
+                    <img src="assets/code_1.jpg" class="card-img-top" alt="books">
+                    <div class="card-body">
+                        <h5 class="card-title">Coding</h5>
+                        <p class="card-text" style="text-align: justify;" >Coding Enthusiast. Love to solve challenging problems through code. Python3 is my favourite. ¯\_(ツ)_/¯</p>
+                        <button onclick="add_code(); return false" class="btn btn-primary" id="code">Love Coding (0)</button>                        
+                        <form>
+                            <div class="form-row align-items-center" style="margin-top: 8px;">
+                                <div class="col-lg-9 my-1">
+                                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                                    <input type="text" class="form-control" placeholder="Suggest project ideas">
+                                </div>                        
+                                <div class="col-auto my-1">
+                                    <button type="submit" class="btn btn-primary"><></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card" style="width: 18rem; margin-right: 25px;">
+                    <img src="assets/physics.jpg" class="card-img-top" alt="books">
+                    <div class="card-body">
+                        <h5 class="card-title">Physics</h5>
+                        <p class="card-text" style="text-align: justify;" >Wonderful subject with mystic theories. Einstein and his Theory Of Relativity my favourite. (I am still not sure of what it explains)</p>
+                        <button onclick="add_phy(); return false" class="btn btn-primary" id="phy">Love Physics (0)</button>                        
+                        <form>
+                            <div class="form-row align-items-center" style="margin-top: 8px;">
+                                <div class="col-lg-9 my-1">
+                                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                                    <input type="text" class="form-control" placeholder="What fascinates you?">
+                                </div>                        
+                                <div class="col-auto my-1">
+                                    <button type="submit" class="btn btn-primary">☼</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
